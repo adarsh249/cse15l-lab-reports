@@ -13,6 +13,3 @@ Now on Visual Studio Code
 # Actual Lab Reports Below
 
 [Link to lab-report-1-week-0](https://adarsh249.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
-
-
-theme: Modernist
