@@ -11,7 +11,7 @@ something that looks like this below.
 
 The next step is to remotley connect to our server. The first thing to do is install OpenSSH here: [Install OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) If you are running on Mac like me, theres no need to install OpenSSH and you can proceed. Open Visual Studio Code and type `ssh cs15lfa22ba@ieng6.ucsd.edu`. 
 You will get a message since it is your first time connecting to the server so just type `Yes` and hit Enter. After some time, you will get a screen that looks like this below.
-![Remote Connection Screenshot](Remote Connection Screenshot.png]
+![Remote Connection Screenshot](Remote Connection Screenshot.png)
 
 ## Step 3
 
