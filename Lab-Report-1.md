@@ -20,7 +20,7 @@ Next, try some commands. While logged into the ssh server try the command `cp /h
 
 ## Step 4
 
-Next you need to move files using the scp command. Create a file "WhereAmI.java" in Visual Studio Code and copy and paste the contents below into that file.
+Next you need to move files using the scp command. Create a file "WhereAmI.java" in Visual Studio Code and copy and paste the highlighted contents below into that file.
 `class WhereamI{
   public static void main(String[] args){
     System.out.println(System.getProperty("os.name"));
