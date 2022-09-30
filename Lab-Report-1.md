@@ -45,4 +45,8 @@ After saving this file, run the command `scp WhereAmI.java cs15lfa22ba@ieng6.ucs
  
  ![SSH Keygen Screenshot](SSH Keygen Screenshot.png)
  
-    
+## Step 6
+
+The next step is to optimize remote running. Try the command `ssh cs15lfa22ba@ieng6.ucsd.edu "ls"`. You can run commands and log in at the same time! Another command to to try when logged in is `javac WhereAmI.java; java WhereAmI`. Below should be what your output should look like.
+
+![Optimization Screenshot](Optimization Screenshot.png)
