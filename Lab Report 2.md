@@ -63,11 +63,11 @@ class SearchEngine {
 ```
 When you first start the server with a port number of your choice (4000 in this case), the load up or default screen is the screenshot below.
 
-![Load Up Screenshot](Lab Report 2 Screenshots/Load Up Screenshot)
+![Load Up Screenshot](Lab Report 2 Screenshots/Load Up Screenshot.png)
 
 This is a list of of strings and you can add or search for Strings! Below is a screenshot of adding strings.
 
-![Add Pineapple Screenshot](Lab Report 2 Screenshots/Add Pineapple Screenshot)
+![Add Pineapple Screenshot](Lab Report 2 Screenshots/Add Pineapple Screenshot.png)
 
 When you append `/add?s=pineapple` to the intial link of `localhost:4000`, the method of the second if statement below is called.
 ```java
@@ -85,7 +85,7 @@ Since `url.getPath()` equals our `/add` this if statement is called. Then, the m
 
 We can add another string "apple".
 
-![Add Apple Screenshot](Lab Report 2 Screenshots/Add Apple Screenshot)
+![Add Apple Screenshot](Lab Report 2 Screenshots/Add Apple Screenshot.png)
 
 I will also add the string "orange", but there won't be a screenshot for it. Now the ArrayList includes the strings ["pineapple", "apple", "orange"].
 
@@ -111,6 +111,19 @@ else {
 }
 ```
 
-In this case, 
+In this case, if `url.getPath()` finds `\search` next, it will execute the if block where similar to the last code block, `url.getQuery()` will find the `?`, and then split everything from the equal sign into a String array. The first element of the String array will be "s", and the second element will be the string we entered which is "app". If the first element is "s", then the program will loop through the array list, and use the `.contains()` method on each string to find if the strings we added contain the string "app" in them. It will add these strings to a "returnString" and then display which strings have the string "app" in them. Below is a screenshot of what the URL and output looks like. If we change the string after `s=`, then it will simply rerun the code to find strings that match it. If none of the strings include the strings we are looking for, the page will turn white. It may be helpful here to add an error message if none of the strings include the string we are looking for.
+
+![Search App Screenshot](Lab Report 2 Screenshots/Search App Screenshot.png)
+
+An additional screenshot of what happens below if you enter an URL that the program doesn't recognize. You will see "404 Not Found" on the screen and the console will display the path that was entered. Below is an example, where we spell search wrong.
+
+![Error 404 Screenshot](Lab Report 2 Screenshots/Error 404 Screenshot.png)
+
+![Error Console Screenshot](Lab Report 2 Screenshots/Error Console Screenshot.png)
+
+## Part 2
+
+
+
 
 
