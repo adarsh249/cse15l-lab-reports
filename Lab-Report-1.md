@@ -22,14 +22,16 @@ Next, try some commands. While logged into the ssh server try the command `cp /h
 ## Step 4
 
 Next you need to move files using the scp command. Create a file "WhereAmI.java" in Visual Studio Code and copy and paste the highlighted contents below into that file.
-`class WhereAmI{
+```
+class WhereAmI{
   public static void main(String[] args){
     System.out.println(System.getProperty("os.name"));
     System.out.println(System.getProperty("user.name"));
     System.out.println(System.getProperty("user.home"));
     System.out.println(System.getProperty("user.dir"));
    }
-  }`
+  }
+```
 
 After saving this file, run the command `scp WhereAmI.java cs15lfa22ba@ieng6.ucsd.edu:~/` in your terminal. It is important to make sure you are first on the local computer and not on your server. How this command works is `scp` will secure copy the file `WhereAmI.java`. `cs15lfa22ba@ieng6.ucsd.edu` is the normal login we use to get into the ssh server. The `:~/` tells us where we should put the file in the server. Anything after the `:` means the server, so in this case we are putting `WhereAmI.java` from the local computer to the home directory(because of the `~`) in the server. It will prompt you for your password so make sure to type that in. Then, log in again as we did in Step 2 and type `ls` into the command line. `ls` allows us to see which files exist in the current directory. If the file `WhereAmI.java` is present, type the commands 
 `javac WhereAmI.java` and  `java WhereAmI`
