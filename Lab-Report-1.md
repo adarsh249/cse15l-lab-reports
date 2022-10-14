@@ -2,15 +2,17 @@
 ## Step 1
 
 Make sure to install Visual Studio Code. Go to this link: [VS Code Download](https://code.visualstudio.com/download) and download the correct
-version based on your operating system. I already have VS Code downlaoded, however, after the download, install and open VS Code, and you'll have
+version based on your operating system. I already have VS Code downloaded, however, after the download, install and open VS Code, and you'll have
 something that looks like this below.
 
 ![VS Code Screenshot](Lab Report 1 Screenshots/VS Code Screenshot.png)
 
 ## Step 2
 
-The next step is to remotley connect to our server. The first thing to do is install OpenSSH here: [Install OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) If you are running on Mac like me, theres no need to install OpenSSH and you can proceed. Open Visual Studio Code and type `ssh cs15lfa22ba@ieng6.ucsd.edu`. This command logs is like the username of logging us into the server. This will be the first step in logging into the server. You will get a message since it is your first time connecting to the server so just type `Yes` and hit Enter. After some time, you will get a screen that looks like this below.
+The next step is to remotely connect to our server. The first thing to do is install OpenSSH here: [Install OpenSSH.](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) If you are running on Mac like me, theres no need to install OpenSSH and you can proceed. Open Visual Studio Code and type `ssh cs15lfa22ba@ieng6.ucsd.edu`. This command will use ssh to log us into the server. This will be the first step in logging into the server. You will get a message since it is your first time connecting to the server so just type `Yes` and hit Enter. After some time, you will get a screen that looks like this below.
 ![Remote Connection Screenshot](Lab Report 1 Screenshots/Remote Connection Screenshot.png)
+
+You are now logged onto the server!
 
 ## Step 3
 
@@ -20,20 +22,17 @@ Next, try some commands. While logged into the ssh server try the command `cp /h
 ## Step 4
 
 Next you need to move files using the scp command. Create a file "WhereAmI.java" in Visual Studio Code and copy and paste the highlighted contents below into that file.
-`
-class WhereamI{
+`class WhereAmI{
   public static void main(String[] args){
     System.out.println(System.getProperty("os.name"));
     System.out.println(System.getProperty("user.name"));
     System.out.println(System.getProperty("user.home"));
     System.out.println(System.getProperty("user.dir"));
    }
-  }
-  `
+  }`
 
-After saving this file, run the command `scp WhereAmI.java cs15lfa22ba@ieng6.ucsd.edu:~/` in your terminal. It is important to make sure you are first on the local computer and not on your server. How this command works is `scp` will secure copy the file `WhereAmI.java`. `cs15lfa22ba@ieng6.ucsd.edu` is the normal login we use to get into the ssh server. The `:~/` tells us where we should put the file in the server. Anything after the `:` means the server, so in this case we are putting `WhereAmI.java` from the local computer to the home directory(because of the `~`) in the server. It will prompt you for your password so make sure to type that in. Then, log in again as we did in Step 2 and type `ls` into the command line. `ls` allows us to see which files exist in the current direcotyr. If the file WhereAmI.java is present, type the commands 
-`javac WhereAmI.java
-java WhereAmI`
+After saving this file, run the command `scp WhereAmI.java cs15lfa22ba@ieng6.ucsd.edu:~/` in your terminal. It is important to make sure you are first on the local computer and not on your server. How this command works is `scp` will secure copy the file `WhereAmI.java`. `cs15lfa22ba@ieng6.ucsd.edu` is the normal login we use to get into the ssh server. The `:~/` tells us where we should put the file in the server. Anything after the `:` means the server, so in this case we are putting `WhereAmI.java` from the local computer to the home directory(because of the `~`) in the server. It will prompt you for your password so make sure to type that in. Then, log in again as we did in Step 2 and type `ls` into the command line. `ls` allows us to see which files exist in the current directory. If the file `WhereAmI.java` is present, type the commands 
+`javac WhereAmI.java` and  `java WhereAmI`
 into the terminal. These are your basic commands to execute and run the java file.
  
 You should have an output like the screenshot below.
