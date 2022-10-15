@@ -119,11 +119,11 @@ else {
 }
 ```
 
-In this case, if `url.getPath()` finds `\search` next, it will execute the if block where similar to the last code block, `url.getQuery()` will find the `?`, and then split everything from the equal sign into a String array. The first element of the String array will be "s", and the second element will be the string we entered which is "app". If the first element is "s", then the program will loop through the array list, and use the `.contains()` method on each string to find if the strings we added contain the string "app" in them. It will add these strings to a "returnString" and then display which strings have the string "app" in them. Below is a screenshot of what the URL and output looks like. If we change the string after `s=`, then it will simply rerun the code to find strings that match it. If none of the strings include the strings we are looking for, the page will turn white. It may be helpful here to add an error message if none of the strings include the string we are looking for.
+In this case, if `url.getPath()` finds `/search` next, it will execute the if block where similar to the last code block, `url.getQuery()` will find the `?`, and then split everything from the equal sign into a String array. The first element of the String array will be "s", and the second element will be the string we entered which is "app". If the first element is "s", then the program will loop through the array list, and use the `.contains()` method on each string to find if the strings we added contain the string "app" in them. It will add these strings to a "returnString" and then display which strings have the string "app" in them. Below is a screenshot of what the URL and output looks like. If we change the string after `s=`, then it will simply rerun the code to find strings that match it. If none of the strings include the strings we are looking for, the page will turn white. It may be helpful here to add an error message if none of the strings include the string we are looking for.
 
 ![Search App Screenshot](Lab Report 2 Screenshots/Search App Screenshot.png)
 
-An additional screenshot of what happens below if you enter an URL that the program doesn't recognize. You will see "404 Not Found" on the screen and the console will display the path that was entered. Below is an example, where we spell search wrong.
+An additional screenshot of what happens below if you enter an URL that the program doesn't recognize. You will see "404 Not Found" on the screen and the console will display the path that was entered. Below is an example, where we spell search wrong. There's simply a "return "404 Not Found" at the end of the code, if none of the if statements work.
 
 ![Error 404 Screenshot](Lab Report 2 Screenshots/Error 404 Screenshot.png)
 
@@ -183,7 +183,7 @@ static List<File> getFiles(File start) throws IOException {
 
 The symptom was the output below:
 
-![FileExample Symptom 1](Lab Report 2 Screenshots/File Example Symptom 1.png)
+![FileExample Symptom 1](Lab Report 2 Screenshots/FileExample Symptom 1.png)
 
 The code without the bug looks like this:
 
