@@ -175,7 +175,7 @@ static List<File> getFiles(File start) throws IOException {
 
 The symptom was the output below:
 
-![File Example Symptom 1](Lab Report 2 Screenshots/File Example Symptom 1.png)
+![FileExample Symptom 1](Lab Report 2 Screenshots/File Example Symptom 1.png)
 
 The code without the bug looks like this:
 
