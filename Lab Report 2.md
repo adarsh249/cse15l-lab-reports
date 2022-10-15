@@ -65,6 +65,14 @@ When you first start the server with a port number of your choice (4000 in this 
 
 ![Load Up Screenshot](Lab Report 2 Screenshots/Load Up Screenshot.png)
 
+This code for this is simple below:
+
+```java
+if (url.getPath().equals("/")) {
+            return String.format("Add a string!");
+```
+If the path is just `/`, its going to output "Add a string!"
+
 This is a list of of strings and you can add or search for Strings! Below is a screenshot of adding strings.
 
 ![Add Pineapple Screenshot](Lab Report 2 Screenshots/Add Pineapple Screenshot.png)
