@@ -15,7 +15,7 @@ technical/911report/chapter-3.txt:            Another diplomatic option may have
 technical/911report/chapter-3.txt:                provided some support for talks among the leaders of exile Afghan groups, including
 technical/911report/chapter-3.txt:                told us that the exile groups were not ready to move forward and that coordinating
 ```
-In this case, our command is matching the string "exile" to any of the files that follow the pattern /technical/*/*.txt which also include the string "exile" exactly. This can be useful if you are trying to find a certain word in a number of files. It's similar to using "Ctrl + F" on a webpage, but just to find the exact string, not a substring.
+In this case, our command is matching the string `exile` to any of the files that follow the pattern `/technical/*\/*.txt` which also include the string `exile` exactly. This can be useful if you are trying to find a certain word in a number of files. It's similar to using `Ctrl + F` on a webpage, but just to find the exact string, not a substring.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -w "adults" technical/*/1468-6708-3-1.txt
@@ -38,15 +38,17 @@ adarshpatel@Adarshs-MacBook-Air docsearch % grep -w "adults" technical/*/1468-67
         obese or underweight older adults, and discouraging trials
         that address older adults who are merely overweight.
 ```
-Here, we grep the string "adults" in just one file, and the command returns each line that has the string "adults" in it. Similar to the pervious one, the command will just return the line that includes the given string. Again, this is similar to a doing "Ctrl + F" on a webpage.
+Here, we grep the string `adults` in just one file, and the command returns each line that has the string `adults` in it. Similar to the pervious one, the command will just return the line that includes the given string. Again, this is similar to a doing `Ctrl + F` on a webpage.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -w "Superman" technical/*/*.txt    
 adarshpatel@Adarshs-MacBook-Air docsearch % 
 ```
-In this case, we grepped for the string "Superman" and the command returned nothing, meaning that "Superman" does not exist in any of the files that follow the given pattern.
+In this case, we grepped for the string `Superman` and the command returned nothing, meaning that `Superman` does not exist in any of the files that follow the given pattern.
 
-Another command line option includes -l in which grep will only display the filenames after searching for the given string.
+### grep -l Examples
+
+Another command line option includes `-l` in which grep will only display the filenames after searching for the given string.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -l "medical" technical/*/*.txt
@@ -277,7 +279,7 @@ technical/plos/pmed.0020247.txt
 technical/plos/pmed.0020249.txt
 technical/plos/pmed.0020278.txt
 ```
-In this case, we searched for the string "medical" in the techincal/*/*.txt pattern and the command using -l only returned the file paths. This is useful since our terminal would get filled if grep went out and printed the lines of each of these files. 
+In this case, we searched for the string `medical` in the `techincal/*\/*.txt` pattern and the command using `-l` only returned the file paths. This is useful since our terminal would get filled if grep went out and printed the lines of each of these files. 
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -l "weather" technical/*/*.txt
@@ -295,15 +297,17 @@ technical/plos/journal.pbio.0020216.txt
 technical/plos/pmed.0020144.txt
 technical/plos/pmed.0020272.txt
 ```
-Here is another example where we want to find files with "weather" but only want it to return the path and file names. Another reason this is useful is if one file has the string "weather" multiple times, instead of grep printing each line with weather in the file, it will just tell you the file, again, not overcrowding our terminal. 
+Here is another example where we want to find files with `weather` but only want it to return the path and file names. Another reason this is useful is if one file has the string `weather` multiple times, instead of grep printing each line with weather in the file, it will just tell you the file, again, not overcrowding our terminal. 
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -l "Carry" technical/*/*.txt
 technical/biomed/1476-0711-2-7.txt
 ```
-One last example that only returned one file. Obviously in this case, we don't know what files have which words, but when the output is small like this, it would be useful to see the line including "Carry" here so we wouldn't have to click on the file to find out where it is in the file. This could be one downside to using the -l option.
+One last example that only returned one file. Obviously in this case, we don't know what files have which words, but when the output is small like this, it would be useful to see the line including `Carry` here so we wouldn't have to click on the file to find out where it is in the file. This could be one downside to using the `-l` option.
 
-Another cool command line argument includes -r, which will recursivley go through every file in a given directory and search it. (If you noticed earlier, the pattern didn't actually get every directory with .txt files)
+### grep -r Examples
+
+Another cool command line argument includes `-r`, which will recursivley go through every file in a given directory and search it. (If you noticed earlier, the pattern didn't actually get every directory with .txt files)
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -r "Canada" technical
@@ -452,7 +456,7 @@ technical/911report/chapter-8.txt:                The millennium plotting in Can
 technical/911report/chapter-12.txt:                    carrying passports when returning from Canada, Mexico, and the Caribbean. The
 technical/911report/chapter-12.txt:                entrances between our ports of entry, working with Canada and Mexico as much as
 ```
-In this case, we recursively searched for the string "Canada" and we got files from the technical/government directory which we were not getting before. This can be useful for a file system that has multiple files in many different directories. 
+In this case, we recursively searched for the string `Canada` and we got files from the technical/government directory which we were not getting before. This can be useful for a file system that has multiple files in many different directories. 
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -r "grantees" technical
@@ -703,15 +707,15 @@ technical/government/Media/Annual_Fee.txt:action raising the fee "is lifesaving 
 technical/government/Media/Barr_sharpening_ax.txt:restrictions placed on grantees are strictly observed," Erlenborn
 technical/government/Media/NJ_Legal_Services.txt:requirements that apply to all LSC grantees in the country.
 ```
-See in this example, I searched for the string "grantees". In the previous command line options, grep would have returned nothing since it wasn't going into the directories within /government. Recursively searching ensures to get every file.
+See in this example, I searched for the string `grantees`. In the previous command line options, grep would have returned nothing since it wasn't going into the directories within `/government`. Recursively searching ensures to get every file.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -r "Superman" technical   
 adarshpatel@Adarshs-MacBook-Air docsearch % 
 ```
-Just to make sure, we searched for "Superman" again and it doesn't seem to be in any of the files given. But as you can see, there is no output if nothing is found.
+Just to make sure, we searched for `Superman` again and it doesn't seem to be in any of the files given. But as you can see, there is no output if nothing is found.
 
-Its important to note that some of these are long and you can put commands together. With the 3 examples, lets say we want to recursively search for ONLY the word "adult" and only return the file name. We just have to put the command line options together.
+Its important to note that some of these are long and you can put commands together. With the 3 examples, lets say we want to recursively search for ONLY the word `adult` and only return the file name. We just have to put the command line options together.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -r -w -l "adult" technical
