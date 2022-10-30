@@ -17,3 +17,5 @@ Now on Visual Studio Code
 [Lab Report 1](https://adarsh249.github.io/cse15l-lab-reports/Lab-Report-1.html)
 
 [Lab Report 2](https://adarsh249.github.io/cse15l-lab-reports/Lab%20Report%202.html)
+
+[Lab Report 3](https://adarsh249.github.io/cse15l-lab-reports/Lab%20Report%203.html)
