@@ -15,7 +15,7 @@ technical/911report/chapter-3.txt:            Another diplomatic option may have
 technical/911report/chapter-3.txt:                provided some support for talks among the leaders of exile Afghan groups, including
 technical/911report/chapter-3.txt:                told us that the exile groups were not ready to move forward and that coordinating
 ```
-In this case, our command is matching the string `exile` to any of the files that follow the pattern `/technical/*\/*.txt` which also include the string `exile` exactly. This can be useful if you are trying to find a certain word in a number of files. It's similar to using `Ctrl + F` on a webpage, but just to find the exact string, not a substring.
+In this case, our command is matching the string `exile` to any of the files that follow the pattern `/technical/*/*.txt` which also include the string `exile` exactly. This can be useful if you are trying to find a certain word in a number of files. It's similar to using `Ctrl + F` on a webpage, but just to find the exact string, not a substring.
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -w "adults" technical/*/1468-6708-3-1.txt
@@ -279,7 +279,7 @@ technical/plos/pmed.0020247.txt
 technical/plos/pmed.0020249.txt
 technical/plos/pmed.0020278.txt
 ```
-In this case, we searched for the string `medical` in the `techincal/*\/*.txt` pattern and the command using `-l` only returned the file paths. This is useful since our terminal would get filled if grep went out and printed the lines of each of these files. 
+In this case, we searched for the string `medical` in the `techincal/*/*.txt` pattern and the command using `-l` only returned the file paths. This is useful since our terminal would get filled if grep went out and printed the lines of each of these files. 
 
 ```
 adarshpatel@Adarshs-MacBook-Air docsearch % grep -l "weather" technical/*/*.txt
