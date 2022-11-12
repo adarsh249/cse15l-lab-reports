@@ -3,7 +3,9 @@
 
 In `DocSearchServer.java`, we changed the name of the `start` parameter of `getFiles`, and all of its uses, to be instead called `base`.
 
-This was done in exactly 25 steps.
+This was done in exactly 22 steps.
+
+`/start<Enter>cgnbase<Esc>n.n.:wq<Enter>`
 
 While in vim, first type `/start<Enter>` (7 keys) and you will get something like this below.
 
