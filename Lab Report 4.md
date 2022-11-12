@@ -19,7 +19,7 @@ We know `gn` selects (highlights) the next match of `start` everytime we use it.
 
 Now, type `base<Esc>` (5 keys) and see the output below.
 
-![Image](Lab Report 4 Screenshots/baeesc.png)
+![Image](Lab Report 4 Screenshots/baseesc.png)
 
 Since `cgn` put us into insert mode, we type base, since we want to replace `start` with the word `base`. Pressing `<Esc>` will escape us out of insert mode and back to visual mode.
 
