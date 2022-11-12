@@ -3,7 +3,7 @@
 
 In `DocSearchServer.java`, we changed the name of the `start` parameter of `getFiles`, and all of its uses, to be instead called `base`.
 
-This was done in exactly 22 steps.
+This was done in exactly 23 steps.
 
 `/start<Enter>cgnbase<Esc>n.n.:wq<Enter>`
 
@@ -51,7 +51,7 @@ Next type `:wq<Enter>` (4 keys) and you will get the output below.
 
 When you type `:wq`, it will show at the bottom left of the terminal where we have previously seen where insert mode, `n.`, `cgn`, and other commands show up. Hitting `<Enter>` will execute this command. `:wq` is a mix of 2 commands where `w` saves the file and `q` quits. Doing this command together, `:wq` will save the file and exit out of vim.
 
-The total keys pressed was: 22.
+The total keys pressed was: 23.
 
 ## Part 2
 
