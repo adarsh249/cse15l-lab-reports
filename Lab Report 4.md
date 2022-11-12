@@ -31,11 +31,11 @@ The first `n.` takes you here:
 
 The second `n.` takes you here:
 
-![Image](Lab Report 4 Screenshots/n1.png)
+![Image](Lab Report 4 Screenshots/n2.png)
 
 The third `n.` takes you here:
 
-![Image](Lab Report 4 Screenshots/n1.png)
+![Image](Lab Report 4 Screenshots/n3.png)
 
 I didn't tell you to do a 4th one but if you accidentally did or if you're confused on your own when you are done finding and replacing, if you do `n.` again, you get an an error telling you there is nothing left to find and replace.
 
