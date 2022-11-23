@@ -48,13 +48,15 @@ Below are the outputs for three different repositories:
 
 Repository 1: `https://github.com/ucsd-cse15l-f22/list-methods-corrected`
 
-![Image 1](Screen Shot 2022-11-23 at 3.14.59 PM.png)
+![Image 1](Lab Report 5 Screenshots/Screen Shot 2022-11-23 at 3.14.59 PM.png)
 
 Repository 2: `https://github.com/ucsd-cse15l-f22/list-methods-compile-error`
 
-![Image 2](Screen Shot 2022-11-23 at 3.17.15 PM.png)
+![Image 2](Lab Report 5 Screenshots/Screen Shot 2022-11-23 at 3.17.15 PM.png)
 
 Repository 3: `https://github.com/ucsd-cse15l-f22/list-methods-filename`
 
-![Image 3](Screen Shot 2022-11-23 at 3.18.30 PM.png)
+![Image 3](Lab Report 5 Screenshots/Screen Shot 2022-11-23 at 3.18.30 PM.png)
+
+## Trace
 
