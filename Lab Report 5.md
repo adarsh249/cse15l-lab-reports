@@ -75,3 +75,6 @@ The trace will be done for this Repository 1: `https://github.com/ucsd-cse15l-f2
 | 29 | `java` | ![Image 4](Lab Report 5 Screenshots/Screen Shot 2022-11-23 at 4.31.08 PM.png) | No Output | 0 |
 | 35 | `echo`| `Pass` | No Output | 0 |
 | 40 | `exit` | No Output | No Output | 1 |
+
+For the if statements:
+On line 9, the if statement `-f ListExamples.java` is true since the file ListExamples.java exists in hte working directory. (it came from cloning the repo). Since this is true lines 12 to 14 from `else` to `exit` do not run. The second if statement on line 23, `$? -ne 0` is false since this repository does not have a compiler error. Since `javac` ran successfully, the return code was 0. This means lines 24 to 26 do not run from `then` to `exit`. The third if statement on line 33, `$OK -eq 1`, is true since all test cases passed in the given repository. We grepped the amount of times grade.txt (The file where we put `java`'s command output to) had the work `OK` in it. If it had it once, `grep -c` would return 1 and it also means all test cases passed. The if statement checks if that is 1. Because it is true, lines 36 to 37 do not run from `else` to `echo "Fail"`. 
