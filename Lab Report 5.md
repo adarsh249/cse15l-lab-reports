@@ -72,10 +72,10 @@ The trace will be done for this Repository 1: `https://github.com/ucsd-cse15l-f2
 | 17 | `cp` | No Output | No Output | 0 |
 | 19 | `cd` | No Output | No Output | 0 |
 | 21 | `javac` | No Output | No Output | 0 |
-| 29 | `java` | ```JUnit version 4.13.2
+| 29 | `java` | `JUnit version 4.13.2
                 ..
                 Time: 0.004
 
-                OK (2 tests)``` | No Output | 0 |
+                OK (2 tests)`| No Output | 0 |
 | 35 | `echo`| `Pass` | No Output | 0 |
 | 40 | `exit` | No Output | No Output | 1 |
