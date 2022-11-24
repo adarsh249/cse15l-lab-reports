@@ -60,3 +60,22 @@ Repository 3: `https://github.com/ucsd-cse15l-f22/list-methods-filename`
 
 ## Trace
 
+The trace will be done for this Repository 1: `https://github.com/ucsd-cse15l-f22/list-methods-corrected` (Refer to the first image).
+
+| Line Number | Commands | Standard Output | Standard Error | Exit Code |
+|-------------|----------|-----------------|----------------|-----------|
+| 2 | `rm -rf` | No Output | No Output | 0 |
+| 3 | `git clone` | No Output | `Cloning into student-submission'...` | 0 |
+| 5 | `echo` | `Cloning...` | No Output | 0 |
+| 7 | `cd` | No Output | No Output | 0|
+| 11 | `echo` | `Found student's file` | No Output | 0 |
+| 17 | `cp` | No Output | No Output | 0 |
+| 19 | `cd` | No Output | No Output | 0 |
+| 21 | `javac` | No Output | No Output | 0 |
+| 29 | `java` | ```JUnit version 4.13.2
+..
+Time: 0.004
+
+OK (2 tests)``` | No Output | 0 |
+| 35 | `echo`| `Pass` | No Output | 0 |
+| 40 | `exit` | No Output | No Output | 1 |
